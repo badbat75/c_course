@@ -24,7 +24,7 @@ extern char* repeatPattern (const int charqty, const char linedraw[])
     #ifdef _MSC_VER
             strcat_s (str, strBufferSize, linedraw);
     #else
-            strncat (str, linedraw, linedrawLen);
+            strncat (str, linedraw, strBufferSize);
     #endif
     }
     return str;

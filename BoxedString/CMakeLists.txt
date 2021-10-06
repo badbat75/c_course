@@ -6,7 +6,7 @@ set(libBoxedStringPlot BoxedString_plot.c)
 # set the project name
 project(BoxedString VERSION 1.0)
 
-set(CMAKE_VERBOSE_MAKEFILE "ON")
+set(CMAKE_VERBOSE_MAKEFILE ON CACHE BOOL "ON" FORCE)
 
 if ("${CMAKE_C_COMPILER_ID}" STREQUAL "MSVC")
     message("Microsoft C/C++ Optimizing Compiler found.")

@@ -10,12 +10,13 @@ int main(int argc, char **argv) {
     char vline[INPUT_MAX + 1] = "o";
     if ( argc == 1)
     {
-       printf ("\nInsert your string here: ");
+        printf ("\nInsert your string here: ");
         #ifdef _MSC_VER
             scanf_s ("%" INPUT_MAX_S "[^\n]", &inputstr, INPUT_MAX + 1);
         #else
             scanf ("%" INPUT_MAX_S "[^\n]", inputstr);
         #endif
+        printf("\n");
     }
     for (int i = 0; i < argc; ++i)
     {
@@ -44,7 +45,6 @@ int main(int argc, char **argv) {
             break;
         }  
     }
-    printf("\n");
 
     plotString (inputstr, hline, vline);
 

@@ -5,7 +5,6 @@
 #include "BoxedString.h"
 
 int main(int argc, char **argv) {
-    //char inputstr[INPUT_MAX + 1]; 
     char inputstr[INPUT_MAX + 1]; 
     char hline[INPUT_MAX + 1] = "o";
     char vline[INPUT_MAX + 1] = "o";
